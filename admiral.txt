@@ -1,0 +1,52 @@
+Block admiral anti adblock
+Admiral anti-adblock is a common obstacle that many users face when trying to access websites with adblockers enabled. To block Admiral anti-adblock, you can try the following methods:
+
+Method 1: Disable JavaScript
+
+Disabling JavaScript can help you bypass Admiral anti-adblock detection. To do this:
+
+Open your browser settings and navigate to the JavaScript settings.
+Disable JavaScript for the website you’re trying to access.
+Reload the page and see if the Admiral anti-adblock notification appears.
+Method 2: Use a Custom Filter List
+
+You can create a custom filter list to block Admiral anti-adblock notifications. To do this:
+
+Create a new filter list in your adblocker software (e.g., uBlock Origin).
+Add the following rules to the list:
+@@||admiral.com$javascript
+@@||admiral.com$script
+Save the filter list and reload your browser.
+Method 3: Use a User Script
+
+You can also use a user script to block Admiral anti-adblock notifications. To do this:
+
+Create a new user script in your adblocker software (e.g., uBlock Origin).
+Add the following code to the script:
+// ==UserScript==
+// @name         Block Admiral Anti-Adblock
+// @namespace    http://tampermonkey.com/
+// @version      0.1
+// @description  Block Admiral anti-adblock notifications.
+// @author       You
+// @match        https://www.example.com/*
+// @grant        none
+// ==/UserScript==
+(function() {
+  'use strict';
+  var admiralScript = document.createElement('script');
+  admiralScript.src = 'https://admiral.com/admiral.js';
+  document.body.appendChild(admiralScript);
+})();
+
+Save the script and reload your browser.
+Method 4: Use a VPN
+
+Using a VPN can also help you bypass Admiral anti-adblock detection. To do this:
+
+Install a VPN software on your device.
+Connect to a VPN server.
+Access the website with Admiral anti-adblock detection.
+Conclusion
+
+Blocking Admiral anti-adblock notifications can be a bit tricky, but these methods can help you bypass the detection. Remember to always follow the website’s terms of service and respect their advertising policies.
